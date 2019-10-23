@@ -24,9 +24,8 @@ server.host: "{{ kibana_server_host }}"
 # The Kibana server's name.  This is used for display purposes.
 #server.name: "your-hostname"
 
-# The URL of the Elasticsearch instance to use for all your queries.
-# 'elasticsearch.url' has been deprecated in favor of 'elasticsearch.hosts'
-#elasticsearch.url: {{ kibana_elasticsearch_url }}
+# The Hosts of the Elasticsearch instance to use for all your queries.
+# default: http://localhost:9200
 elasticsearch.hosts: {{ kibana_elasticsearch_url }}
 
 # When this setting's value is true Kibana uses the hostname specified in the server.host
